@@ -1,0 +1,33 @@
+
+	JENKINS
+	
+	jenkins is open source and it is entirely  written in JAVA
+	jenkins is a CI/CD tool
+	jenkins is a plugin based tool ,there are 1000+ plugin available in jenkins.
+	jenkins also support cloud based architrcture so that you can deploy jenkins in cloud based platform.
+	default port number is 8080
+	
+	
+	and other CI tool 
+	   jenkins 
+	   bamboo
+	   teamcity
+	   
+	   
+	How many ways to install the jenkins:
+	  1. by using yum command  or apt-get
+	  2. deploying the jenkins in war file in tomcat
+	  3. directly run the jenkins war file 
+	  4. installation of jenkins using docker
+	  
+installation of jenkins in red hat centos fedora using yum command
+   
+    sudo amazon-linux-extras install java-openjdk11
+	sudo amazon-linux-extras install epel
+	curl --silent --location http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo | sudo tee /etc/yum.repos.d/jenkins.repo
+    rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+    systemctl enable jenkins
+	systemctl status jenkins.service
+	systemctl start jenkins.service
+	
+	default path of jenkins is ===== var/lib/jenkins
